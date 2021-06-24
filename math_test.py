@@ -15,7 +15,14 @@ def test_foo():
 
   print("All tests on foo finished")
 
+def test_foo_2():
+  number_a = 4
+  number_b = -2
+  result = foo(number_a,number_b)
+  assert result == 2
+
 if __name__ == '__main__':
   # This calls the test_foo function 
   # when we run from the command line
-  test_foo()  
+  test_foo()
+  test_foo_2()  
